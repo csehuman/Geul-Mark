@@ -6,6 +6,7 @@ target 'GeulMark' do
   use_frameworks!
 
   # Pods for GeulMark
+  pod 'SwiftLint'
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
   pod 'SnapKit', '~> 5.6.0'
