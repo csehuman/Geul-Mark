@@ -10,9 +10,12 @@
 		34E5E2A3BB38D301A731E2C8 /* Pods_GeulMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A78D68D00C9BF82295860B /* Pods_GeulMark.framework */; };
 		4359BAA2C2963AFFB8FBFEBF /* Pods_GeulMark_GeulMarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F98A823E6D7A34F6AF0E30 /* Pods_GeulMark_GeulMarkUITests.framework */; };
 		47B305BEC7DFC3313682B6CA /* Pods_GeulMarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09875BF901479EA2CE71ED26 /* Pods_GeulMarkTests.framework */; };
+		DA73CEAD293713D300626F63 /* BlogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73CEAC293713D300626F63 /* BlogListViewController.swift */; };
+		DA73CEAF293713F700626F63 /* BookmarkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73CEAE293713F700626F63 /* BookmarkListViewController.swift */; };
+		DA73CEB12937170400626F63 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73CEB02937170400626F63 /* SettingViewController.swift */; };
 		DAECE9FE2935D573005D4A47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAECE9FD2935D573005D4A47 /* AppDelegate.swift */; };
 		DAECEA002935D573005D4A47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAECE9FF2935D573005D4A47 /* SceneDelegate.swift */; };
-		DAECEA022935D573005D4A47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAECEA012935D573005D4A47 /* ViewController.swift */; };
+		DAECEA022935D573005D4A47 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAECEA012935D573005D4A47 /* MainTabBarController.swift */; };
 		DAECEA072935D574005D4A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAECEA062935D574005D4A47 /* Assets.xcassets */; };
 		DAECEA0A2935D574005D4A47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAECEA082935D574005D4A47 /* LaunchScreen.storyboard */; };
 		DAECEA152935D574005D4A47 /* GeulMarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAECEA142935D574005D4A47 /* GeulMarkTests.swift */; };
@@ -47,10 +50,13 @@
 		93A78D68D00C9BF82295860B /* Pods_GeulMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeulMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97ED6949DC4548753824CDEA /* Pods-GeulMark-GeulMarkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeulMark-GeulMarkUITests.release.xcconfig"; path = "Target Support Files/Pods-GeulMark-GeulMarkUITests/Pods-GeulMark-GeulMarkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA88BE60B43A36CB954B8111 /* Pods-GeulMark-GeulMarkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeulMark-GeulMarkUITests.debug.xcconfig"; path = "Target Support Files/Pods-GeulMark-GeulMarkUITests/Pods-GeulMark-GeulMarkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA73CEAC293713D300626F63 /* BlogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListViewController.swift; sourceTree = "<group>"; };
+		DA73CEAE293713F700626F63 /* BookmarkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListViewController.swift; sourceTree = "<group>"; };
+		DA73CEB02937170400626F63 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DAECE9FA2935D573005D4A47 /* GeulMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeulMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAECE9FD2935D573005D4A47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAECE9FF2935D573005D4A47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAECEA012935D573005D4A47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAECEA012935D573005D4A47 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DAECEA062935D574005D4A47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAECEA092935D574005D4A47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAECEA0B2935D574005D4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +119,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DA73CEAB2937136B00626F63 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DAECEA012935D573005D4A47 /* MainTabBarController.swift */,
+				DA73CEAC293713D300626F63 /* BlogListViewController.swift */,
+				DA73CEAE293713F700626F63 /* BookmarkListViewController.swift */,
+				DA73CEB02937170400626F63 /* SettingViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		DAECE9F12935D573005D4A47 = {
 			isa = PBXGroup;
 			children = (
@@ -139,9 +156,9 @@
 		DAECE9FC2935D573005D4A47 /* GeulMark */ = {
 			isa = PBXGroup;
 			children = (
+				DA73CEAB2937136B00626F63 /* Scenes */,
 				DAECE9FD2935D573005D4A47 /* AppDelegate.swift */,
 				DAECE9FF2935D573005D4A47 /* SceneDelegate.swift */,
-				DAECEA012935D573005D4A47 /* ViewController.swift */,
 				DAECEA062935D574005D4A47 /* Assets.xcassets */,
 				DAECEA082935D574005D4A47 /* LaunchScreen.storyboard */,
 				DAECEA0B2935D574005D4A47 /* Info.plist */,
@@ -424,9 +441,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAECEA022935D573005D4A47 /* ViewController.swift in Sources */,
+				DAECEA022935D573005D4A47 /* MainTabBarController.swift in Sources */,
 				DAECE9FE2935D573005D4A47 /* AppDelegate.swift in Sources */,
+				DA73CEAD293713D300626F63 /* BlogListViewController.swift in Sources */,
+				DA73CEAF293713F700626F63 /* BookmarkListViewController.swift in Sources */,
 				DAECEA002935D573005D4A47 /* SceneDelegate.swift in Sources */,
+				DA73CEB12937170400626F63 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
